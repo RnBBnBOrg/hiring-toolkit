@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quick-Start Guide — Hiring Toolkit</title>
+  <style>
+/* Governoble.online — Product Stylesheet */
+:root {
+  --ink: #141821;
+  --ground: #faf9f7;
+  --paper: #fff;
+  --steel: #3d5a80;
+  --coral: #d96b4e;
+  --text: #1d1f24;
+  --text-muted: #5a5d63;
+  --border: #d6d3cc;
+  --code-bg: #f0efeb;
+  --quote-border: #d96b4e;
+  --quote-bg: #fdf6f3;
+  --check-color: #3d5a80;
+  --font-display: Georgia, 'Noto Serif', 'Times New Roman', serif;
+  --font-body: -apple-system, 'Segoe UI', system-ui, Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: 'Cascadia Code', 'SF Mono', SFMono-Regular, Consolas, 'Liberation Mono', monospace;
+  --max-w: 760px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #edece8;
+    --ground: #111520;
+    --paper: #1a1f2e;
+    --steel: #7ba4d4;
+    --coral: #e0845f;
+    --text: #dddbd7;
+    --text-muted: #8a8d94;
+    --border: #2a2f3d;
+    --code-bg: #161b28;
+    --quote-border: #e0845f;
+    --quote-bg: #1e1a17;
+    --check-color: #7ba4d4;
+  }
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: var(--font-body);
+  color: var(--text);
+  background: var(--ground);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 48px 28px 80px;
+}
+
+/* Typography */
+h1 { font-family: var(--font-display); font-size: 1.8rem; font-weight: 400; letter-spacing: -0.02em; margin: 48px 0 16px; line-height: 1.25; }
+h2 { font-family: var(--font-display); font-size: 1.4rem; font-weight: 400; letter-spacing: -0.015em; margin: 40px 0 12px; padding-bottom: 8px; border-bottom: 1px solid var(--border); line-height: 1.3; }
+h3 { font-family: var(--font-display); font-size: 1.15rem; font-weight: 400; margin: 32px 0 8px; line-height: 1.35; }
+h4 { font-size: 0.95rem; font-weight: 700; margin: 24px 0 6px; }
+p { margin: 0 0 16px; font-size: 0.95rem; }
+hr { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
+ul { margin: 0 0 16px; padding-left: 24px; font-size: 0.95rem; }
+ol { margin: 0 0 16px; padding-left: 24px; font-size: 0.95rem; }
+li { margin-bottom: 6px; line-height: 1.6; }
+code { font-family: var(--font-mono); font-size: 0.85em; background: var(--code-bg); padding: 2px 6px; border-radius: 3px; }
+
+/* Header */
+.product-header { margin-bottom: 48px; padding-bottom: 24px; border-bottom: 2px solid var(--steel); }
+.product-header .brand { font-family: var(--font-display); font-size: 0.8rem; color: var(--text-muted); letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 4px; }
+.product-header h1 { margin: 0; }
+
+/* Tables */
+.table-wrap { overflow-x: auto; margin: 0 0 20px; }
+table { width: 100%; border-collapse: collapse; font-size: 0.88rem; line-height: 1.5; }
+thead th { text-align: left; font-weight: 700; padding: 10px 14px; border-bottom: 2px solid var(--steel); white-space: nowrap; }
+tbody td { padding: 10px 14px; border-bottom: 1px solid var(--border); vertical-align: top; }
+tbody tr:last-child td { border-bottom: none; }
+tbody tr:nth-child(even) { background: var(--code-bg); }
+
+/* Blockquotes */
+blockquote { border-left: 3px solid var(--quote-border); background: var(--quote-bg); padding: 16px 20px; margin: 0 0 20px; border-radius: 0 4px 4px 0; font-size: 0.92rem; }
+blockquote p:last-child { margin-bottom: 0; }
+
+/* Links */
+a { color: var(--steel); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.15s; }
+a:hover { border-bottom-color: var(--steel); }
+
+/* Footer */
+.product-footer { margin-top: 64px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 0.8rem; color: var(--text-muted); }
+
+/* Print */
+@media print {
+  body { background: #fff; color: #000; max-width: none; padding: 0; }
+  h2 { border-bottom-color: #ccc; }
+  thead th { border-bottom-color: #000; }
+  tbody td { border-bottom-color: #ddd; }
+  .product-header { border-bottom-color: #000; }
+  a { color: #000; }
+}
+
+@media (max-width: 480px) {
+  body { padding: 24px 16px 48px; }
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.2rem; }
+  table { font-size: 0.82rem; }
+  thead th, tbody td { padding: 8px 10px; }
+}
+  </style>
+</head>
+<body>
+
+  <div class="product-header">
+    <div class="brand">Governoble.online</div>
+    <h1>Quick-Start Guide</h1>
+  </div>
+
+  <p>You just bought the Hiring Toolkit. Here's how to get value from it today.</p>
+
+  <hr>
+
+  <h2>First Hire? Start Here</h2>
+
+  <p>If you've never hired before, do these three things:</p>
+
+  <ol>
+    <li><strong>Write your job description</strong> — Open <code>01-job-description.html</code>, pick the template closest to your role, and fill it in. Takes 20-30 minutes.</li>
+    <li><strong>Prep your interview</strong> — Open <code>02-interview-questions.html</code> and pick 8-12 questions. Write them down in order so you're not scrambling during the conversation.</li>
+    <li><strong>Print a scorecard</strong> — Open <code>03-interview-scorecard.html</code> and fill in the role-specific competencies before your first interview. Print one copy per candidate.</li>
+  </ol>
+
+  <p>That's enough to run a professional hiring process. Use the rest of the kit as you need it.</p>
+
+  <hr>
+
+  <h2>Experienced Hirer? Skip Ahead</h2>
+
+  <p>If you've hired before but want to tighten your process:</p>
+
+  <ul>
+    <li><strong>Standardize evaluation</strong> — The scorecard (<code>03</code>) and comparison matrix (<code>04</code>) eliminate the "who did we like more?" debate. Use them with your team.</li>
+    <li><strong>Speed up writing</strong> — The AI prompts (<code>job-description-generator.html</code>) can draft a job description in 2 minutes. Edit it instead of writing from scratch.</li>
+    <li><strong>Fix your rejections</strong> — Most companies ghost candidates. The rejection templates (<code>06</code>) take 60 seconds to customize and send. Your employer brand will thank you.</li>
+  </ul>
+
+  <hr>
+
+  <h2>What's in Each File</h2>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>File</th><th>What it is</th><th>When you need it</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><code>01-job-description.html</code></td><td>4 templates (General, Ops, Customer-Facing, Technical)</td><td>Before you post the job</td></tr>
+        <tr><td><code>02-interview-questions.html</code></td><td>32 questions organized by competency</td><td>Before your first interview</td></tr>
+        <tr><td><code>03-interview-scorecard.html</code></td><td>Structured evaluation form</td><td>During and immediately after each interview</td></tr>
+        <tr><td><code>04-candidate-comparison.html</code></td><td>Side-by-side candidate ranking matrix</td><td>After all interviews are complete</td></tr>
+        <tr><td><code>05-offer-letter.html</code></td><td>3 templates (Full-Time, Part-Time, Contract)</td><td>When you're ready to hire</td></tr>
+        <tr><td><code>06-rejection-and-pipeline.html</code></td><td>6 templates for every rejection scenario</td><td>Throughout the process</td></tr>
+        <tr><td><code>job-description-generator.html</code></td><td>7 AI prompts for writing and improving job descriptions</td><td>When drafting or refining postings</td></tr>
+        <tr><td><code>interview-coach.html</code></td><td>7 AI prompts for interview prep and candidate evaluation</td><td>Before and after interviews</td></tr>
+        <tr><td><code>hiring-operations.html</code></td><td>8 AI prompts for offers, rejections, process design</td><td>Managing the logistics</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <hr>
+
+  <h2>Using the AI Prompts</h2>
+
+  <p>The prompt packs work with any AI tool — ChatGPT, Claude, Gemini, or whatever you prefer.</p>
+
+  <h4>How to use them:</h4>
+  <ol>
+    <li>Open the prompt file</li>
+    <li>Copy the prompt you need</li>
+    <li>Replace the bracketed <code>[text]</code> with your details</li>
+    <li>Paste into your AI tool</li>
+    <li>Edit the output — AI gives you 80%, your judgment finishes the job</li>
+  </ol>
+
+  <h4>Best prompts to start with:</h4>
+  <ul>
+    <li><strong>Job Description Generator — Prompt 5</strong> (Brain Dump) — just talk about what you need and let AI structure it</li>
+    <li><strong>Interview Coach — Prompt 1</strong> (Custom Questions) — generates role-specific interview questions with scoring guidance</li>
+    <li><strong>Hiring Operations — Prompt 4</strong> (Build a Process) — gives you a complete hiring workflow if you don't have one</li>
+  </ul>
+
+  <hr>
+
+  <h2>Using and Sharing Your Templates</h2>
+
+  <p>Every template works directly in your browser — fill in fields, check boxes, and your work saves automatically. No apps or accounts needed.</p>
+
+  <ul>
+    <li><strong>Share the HTML file directly</strong> — send it to a colleague and they can open it in any browser, online or offline</li>
+    <li><strong>Export as PDF</strong> — click "Save / Print PDF" in the toolbar for a clean printable version</li>
+    <li><strong>Each person gets their own saved state</strong> — entries are stored locally in the browser, so multiple people can use the same template independently</li>
+  </ul>
+
+  <h3>ATS (Applicant Tracking System)</h3>
+  <p>If you use an ATS (Greenhouse, Lever, BambooHR, etc.):</p>
+  <ul>
+    <li>Use the scorecard criteria to set up custom interview evaluations in your ATS</li>
+    <li>Use the interview question bank to populate structured interview kits</li>
+    <li>Set up rejection email templates using the templates in <code>06</code></li>
+  </ul>
+
+  <hr>
+
+  <h2>Hiring Timeline: What a Typical Process Looks Like</h2>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Day</th><th>Activity</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Day 1</strong></td><td>Write and post job description</td></tr>
+        <tr><td><strong>Days 2-14</strong></td><td>Collect applications, screen resumes</td></tr>
+        <tr><td><strong>Days 7-14</strong></td><td>Phone screens (20-30 min each)</td></tr>
+        <tr><td><strong>Days 14-21</strong></td><td>Full interviews (45-60 min each)</td></tr>
+        <tr><td><strong>Day 21-23</strong></td><td>Complete scorecards, run comparison matrix, team debrief</td></tr>
+        <tr><td><strong>Day 23-25</strong></td><td>Extend offer</td></tr>
+        <tr><td><strong>Day 25-30</strong></td><td>Negotiate if needed, get signed offer letter</td></tr>
+        <tr><td><strong>Day 30+</strong></td><td>Start onboarding</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>This is a 30-day process for a single role. Adjust based on your urgency and candidate volume.</p>
+
+  <hr>
+
+  <h2>Common Mistakes to Avoid</h2>
+
+  <ol>
+    <li><strong>Writing requirements you don't actually need.</strong> Every extra "must-have" filters out candidates who would've been great. Be honest about what's truly required.</li>
+    <li><strong>Interviewing without a plan.</strong> Winging it means you're testing chemistry, not capability. Pick your questions in advance and ask every candidate the same ones.</li>
+    <li><strong>Waiting too long to decide.</strong> Good candidates have options. If your process takes 6 weeks, you'll lose them to a company that moves in 3.</li>
+    <li><strong>Skipping the scorecard.</strong> "We'll just compare notes" leads to whoever spoke last in the debrief winning the argument. Score independently, then discuss.</li>
+    <li><strong>Ghosting rejected candidates.</strong> It takes 2 minutes to send a rejection email. The candidate spent hours on your process. Respect that.</li>
+  </ol>
+
+  <div class="product-footer">
+    &copy; 2026 Governoble. All rights reserved.
+  </div>
+
+</body>
+</html>

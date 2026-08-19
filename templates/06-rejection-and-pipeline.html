@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rejection &amp; Pipeline Communication — Hiring Toolkit</title>
+  <style>
+/* Governoble.online — Product Stylesheet */
+:root {
+  --ink: #141821;
+  --ground: #faf9f7;
+  --paper: #fff;
+  --steel: #3d5a80;
+  --coral: #d96b4e;
+  --text: #1d1f24;
+  --text-muted: #5a5d63;
+  --border: #d6d3cc;
+  --code-bg: #f0efeb;
+  --quote-border: #d96b4e;
+  --quote-bg: #fdf6f3;
+  --check-color: #3d5a80;
+  --font-display: Georgia, 'Noto Serif', 'Times New Roman', serif;
+  --font-body: -apple-system, 'Segoe UI', system-ui, Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: 'Cascadia Code', 'SF Mono', SFMono-Regular, Consolas, 'Liberation Mono', monospace;
+  --max-w: 760px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #edece8;
+    --ground: #111520;
+    --paper: #1a1f2e;
+    --steel: #7ba4d4;
+    --coral: #e0845f;
+    --text: #dddbd7;
+    --text-muted: #8a8d94;
+    --border: #2a2f3d;
+    --code-bg: #161b28;
+    --quote-border: #e0845f;
+    --quote-bg: #1e1a17;
+    --check-color: #7ba4d4;
+  }
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: var(--font-body);
+  color: var(--text);
+  background: var(--ground);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 48px 28px 80px;
+}
+
+/* Typography */
+h1 { font-family: var(--font-display); font-size: 1.8rem; font-weight: 400; letter-spacing: -0.02em; margin: 48px 0 16px; line-height: 1.25; }
+h2 { font-family: var(--font-display); font-size: 1.4rem; font-weight: 400; letter-spacing: -0.015em; margin: 40px 0 12px; padding-bottom: 8px; border-bottom: 1px solid var(--border); line-height: 1.3; }
+h3 { font-family: var(--font-display); font-size: 1.15rem; font-weight: 400; margin: 32px 0 8px; line-height: 1.35; }
+h4 { font-size: 0.95rem; font-weight: 700; margin: 24px 0 6px; }
+p { margin: 0 0 16px; font-size: 0.95rem; }
+hr { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
+ul { margin: 0 0 16px; padding-left: 24px; font-size: 0.95rem; }
+ol { margin: 0 0 16px; padding-left: 24px; font-size: 0.95rem; }
+li { margin-bottom: 6px; line-height: 1.6; }
+
+/* Header */
+.product-header { margin-bottom: 48px; padding-bottom: 24px; border-bottom: 2px solid var(--steel); }
+.product-header .brand { font-family: var(--font-display); font-size: 0.8rem; color: var(--text-muted); letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 4px; }
+.product-header h1 { margin: 0; }
+
+/* Tables */
+.table-wrap { overflow-x: auto; margin: 0 0 20px; }
+table { width: 100%; border-collapse: collapse; font-size: 0.88rem; line-height: 1.5; }
+thead th { text-align: left; font-weight: 700; padding: 10px 14px; border-bottom: 2px solid var(--steel); white-space: nowrap; }
+tbody td { padding: 10px 14px; border-bottom: 1px solid var(--border); vertical-align: top; }
+tbody tr:last-child td { border-bottom: none; }
+tbody tr:nth-child(even) { background: var(--code-bg); }
+
+/* Blockquotes */
+blockquote { border-left: 3px solid var(--quote-border); background: var(--quote-bg); padding: 16px 20px; margin: 0 0 20px; border-radius: 0 4px 4px 0; font-size: 0.92rem; }
+blockquote p:last-child { margin-bottom: 0; }
+
+/* Email template blocks */
+.email-template { background: var(--paper); border: 1px solid var(--border); border-radius: 4px; padding: 24px 28px; margin: 16px 0 20px; font-size: 0.92rem; }
+.email-template p { margin: 0 0 12px; }
+.email-template p:last-child { margin-bottom: 0; }
+.email-subject { font-weight: 700; color: var(--steel); margin-bottom: 16px !important; }
+
+/* Footer */
+.product-footer { margin-top: 64px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 0.8rem; color: var(--text-muted); }
+
+/* Print */
+@media print {
+  body { background: #fff; color: #000; max-width: none; padding: 0; }
+  h2 { border-bottom-color: #ccc; }
+  .product-header { border-bottom-color: #000; }
+  .email-template { border-color: #ccc; }
+  .tips-section { page-break-before: always; }
+}
+
+@media (max-width: 480px) {
+  body { padding: 24px 16px 48px; }
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.2rem; }
+  .email-template { padding: 16px 20px; }
+}
+  </style>
+</head>
+<body>
+
+  <div class="product-header">
+    <div class="brand">Governoble.online</div>
+    <h1>Rejection &amp; Pipeline Communication</h1>
+  </div>
+
+  <p>How you say "no" matters. These templates protect your reputation and keep good candidates warm for future openings.</p>
+
+  <hr>
+
+  <h2>Template 1: Post-Application — Not Moving Forward</h2>
+
+  <p><strong>When to use:</strong> Candidate applied but won't be interviewed. Send within 5-7 business days of application.</p>
+
+  <div class="email-template">
+    <p class="email-subject">Subject: Your application with [Company Name]</p>
+    <p>Hi [Candidate Name],</p>
+    <p>Thank you for your interest in the [Job Title] position at [Company Name]. I've reviewed your application, and while I was impressed by your background, we've decided to move forward with candidates whose experience more closely matches what we need for this particular role.</p>
+    <p>I appreciate the time you took to apply, and I encourage you to keep an eye on our openings — we're growing, and a different role may be a better fit down the road.</p>
+    <p>Wishing you the best in your search.</p>
+    <p>[Your Name]<br>[Company Name]</p>
+  </div>
+
+  <hr>
+
+  <h2>Template 2: Post-Phone Screen — Not Moving Forward</h2>
+
+  <p><strong>When to use:</strong> Candidate had a phone screen but won't advance to a full interview.</p>
+
+  <div class="email-template">
+    <p class="email-subject">Subject: Update on your candidacy — [Job Title]</p>
+    <p>Hi [Candidate Name],</p>
+    <p>I appreciate you taking the time to speak with [me / interviewer name] about the [Job Title] role. It was great to learn more about your experience.</p>
+    <p>After careful consideration, we've decided to move forward with other candidates for this particular position. This wasn't an easy decision, and it doesn't reflect on your qualifications — the role simply requires a specific [skill / experience / background] that we need to prioritize.</p>
+    <p>Thank you again for your interest in [Company Name]. [If genuine: "I'll keep your resume on file and reach out if something that's a better match comes up."]</p>
+    <p>Best,</p>
+    <p>[Your Name]<br>[Company Name]</p>
+  </div>
+
+  <hr>
+
+  <h2>Template 3: Post-Interview — Not Moving Forward</h2>
+
+  <p><strong>When to use:</strong> Candidate completed a full interview or panel. These candidates deserve more personal communication. Consider calling first, then following up with this email.</p>
+
+  <div class="email-template">
+    <p class="email-subject">Subject: [Job Title] — Decision update</p>
+    <p>Hi [Candidate Name],</p>
+    <p>Thank you for taking the time to meet with our team about the [Job Title] position. We enjoyed getting to know you and appreciated the thoughtful way you approached our conversations.</p>
+    <p>After meeting with all of our finalists, we've made the difficult decision to move forward with another candidate whose background more closely aligns with what we need right now.</p>
+    <p>[Optional — add something genuine and specific: "Your experience with [specific thing] was particularly impressive, and I think it would be a strong asset in the right role."]</p>
+    <p>I'd genuinely like to stay in touch. [If true: "We have plans to hire for [related role / similar role] in the coming months, and I'd love to reach out when that opens up."]</p>
+    <p>Thank you again for the time and preparation you put into this process.</p>
+    <p>Best regards,</p>
+    <p>[Your Name]<br>[Title]<br>[Company Name]</p>
+  </div>
+
+  <hr>
+
+  <h2>Template 4: Keeping a Strong Candidate Warm</h2>
+
+  <p><strong>When to use:</strong> You liked a candidate but chose someone else, and you want them in your pipeline for the next opening.</p>
+
+  <div class="email-template">
+    <p class="email-subject">Subject: Staying connected — [Company Name]</p>
+    <p>Hi [Candidate Name],</p>
+    <p>I wanted to follow up on the [Job Title] role. As I mentioned, we went in a different direction for this particular position, but I meant it when I said I'd like to stay in touch.</p>
+    <p>Your [specific skill or experience] stood out to our team, and we're [growing / planning to add to the team in Q[X] / expanding this department]. I'd love to reach out when something that's a better fit comes up.</p>
+    <p>A couple of options:</p>
+    <ul>
+      <li><strong>If you're open to it</strong>, I'll add you to our talent pipeline and contact you directly when a relevant role opens</li>
+      <li><strong>Connect on LinkedIn</strong> — I'm at [LinkedIn URL]</li>
+    </ul>
+    <p>No pressure either way. I just didn't want to lose touch with someone this strong.</p>
+    <p>Best,</p>
+    <p>[Your Name]<br>[Company Name]</p>
+  </div>
+
+  <hr>
+
+  <h2>Template 5: Candidate Withdraws — Keeping the Door Open</h2>
+
+  <p><strong>When to use:</strong> A candidate pulls out of the process. Stay gracious — they may come back, or refer someone.</p>
+
+  <div class="email-template">
+    <p class="email-subject">Subject: Re: [Job Title] — No hard feelings</p>
+    <p>Hi [Candidate Name],</p>
+    <p>Completely understand — thank you for letting me know and for being upfront about it. I respect that, and I know these decisions aren't always easy.</p>
+    <p>For what it's worth, we were genuinely impressed with you throughout the process. If circumstances change or you see another opportunity with us that catches your eye, please don't hesitate to reach out. You'd skip straight to the front of the line.</p>
+    <p>Wishing you all the best with [the new role / your next chapter / wherever things take you].</p>
+    <p>[Your Name]<br>[Company Name]</p>
+  </div>
+
+  <hr>
+
+  <h2>Template 6: Internal Candidate — Not Selected</h2>
+
+  <p><strong>When to use:</strong> An existing employee applied for a promotion or transfer and didn't get it. Handle this with extra care — they still work for you.</p>
+
+  <div class="email-template">
+    <p>Hi [Employee Name],</p>
+    <p>I wanted to talk to you personally about the [Job Title] position. First, I appreciate that you put yourself forward for it — that takes initiative, and it tells me you're thinking about growth, which I respect.</p>
+    <p>After a thorough process, we've decided to go with [another candidate / an external hire] for this role. I want to be transparent about why: [brief, honest, constructive reason — e.g., "the role requires X experience that we'd like to help you develop first" / "the external candidate brought a specific background in Y that we needed for this particular opening"].</p>
+    <p>What I don't want is for this to feel like a dead end. Here's what I'd like to do:</p>
+    <ul>
+      <li><strong>[Development opportunity]</strong> — [e.g., "Get you enrolled in the leadership training program we discussed"]</li>
+      <li><strong>[Visibility opportunity]</strong> — [e.g., "Have you lead the Q4 project to build those skills"]</li>
+      <li><strong>[Timeline]</strong> — [e.g., "Let's revisit where you are in 6 months and talk about what's next"]</li>
+    </ul>
+    <p>I'm invested in your growth here. Can we set up time this week to talk through a plan?</p>
+    <p>[Your Name]</p>
+  </div>
+
+  <hr>
+
+  <div class="tips-section">
+    <h2>Tips</h2>
+    <ul>
+      <li><strong>Reject quickly.</strong> Ghosting candidates is the single biggest hit to your employer brand. A fast "no" is kinder than a slow one.</li>
+      <li><strong>Never give detailed rejection reasons in writing.</strong> "Your experience doesn't match what we need for this role" is sufficient. Specifics in writing create legal exposure and invite arguments.</li>
+      <li><strong>Call before emailing for anyone who did a full interview.</strong> A rejection email after they spent hours with your team feels impersonal. Call first, then send the written follow-up.</li>
+      <li><strong>The pipeline is real or it's not.</strong> Don't say "we'll keep your resume on file" unless you actually will. Candidates remember, and an empty promise damages trust.</li>
+      <li><strong>Internal rejections require the most care.</strong> This person still works for you. If you handle it poorly, you lose them anyway — just on their timeline, not yours.</li>
+      <li><strong>Every rejection is marketing.</strong> Candidates talk. A respectful "no" turns rejected applicants into referral sources. A sloppy one turns them into Glassdoor reviews.</li>
+    </ul>
+  </div>
+
+  <div class="product-footer">
+    &copy; 2026 Governoble. All rights reserved.
+  </div>
+
+</body>
+</html>

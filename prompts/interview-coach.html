@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Prompts: Interview Coach — Hiring Toolkit</title>
+  <style>
+/* Governoble.online — Product Stylesheet */
+:root {
+  --ink: #141821;
+  --ground: #faf9f7;
+  --paper: #fff;
+  --steel: #3d5a80;
+  --coral: #d96b4e;
+  --text: #1d1f24;
+  --text-muted: #5a5d63;
+  --border: #d6d3cc;
+  --code-bg: #f0efeb;
+  --quote-border: #d96b4e;
+  --quote-bg: #fdf6f3;
+  --check-color: #3d5a80;
+  --font-display: Georgia, 'Noto Serif', 'Times New Roman', serif;
+  --font-body: -apple-system, 'Segoe UI', system-ui, Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: 'Cascadia Code', 'SF Mono', SFMono-Regular, Consolas, 'Liberation Mono', monospace;
+  --max-w: 760px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #edece8;
+    --ground: #111520;
+    --paper: #1a1f2e;
+    --steel: #7ba4d4;
+    --coral: #e0845f;
+    --text: #dddbd7;
+    --text-muted: #8a8d94;
+    --border: #2a2f3d;
+    --code-bg: #161b28;
+    --quote-border: #e0845f;
+    --quote-bg: #1e1a17;
+    --check-color: #7ba4d4;
+  }
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: var(--font-body);
+  color: var(--text);
+  background: var(--ground);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 48px 28px 80px;
+}
+
+/* Typography */
+h1 { font-family: var(--font-display); font-size: 1.8rem; font-weight: 400; letter-spacing: -0.02em; margin: 48px 0 16px; line-height: 1.25; }
+h2 { font-family: var(--font-display); font-size: 1.4rem; font-weight: 400; letter-spacing: -0.015em; margin: 40px 0 12px; padding-bottom: 8px; border-bottom: 1px solid var(--border); line-height: 1.3; }
+h3 { font-family: var(--font-display); font-size: 1.15rem; font-weight: 400; margin: 32px 0 8px; line-height: 1.35; }
+h4 { font-size: 0.95rem; font-weight: 700; margin: 24px 0 6px; }
+p { margin: 0 0 16px; font-size: 0.95rem; }
+hr { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
+ul { margin: 0 0 16px; padding-left: 24px; font-size: 0.95rem; }
+ol { margin: 0 0 16px; padding-left: 24px; font-size: 0.95rem; }
+li { margin-bottom: 6px; line-height: 1.6; }
+
+/* Header */
+.product-header { margin-bottom: 48px; padding-bottom: 24px; border-bottom: 2px solid var(--steel); }
+.product-header .brand { font-family: var(--font-display); font-size: 0.8rem; color: var(--text-muted); letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 4px; }
+.product-header h1 { margin: 0; }
+
+/* Blockquotes */
+blockquote { border-left: 3px solid var(--quote-border); background: var(--quote-bg); padding: 16px 20px; margin: 0 0 20px; border-radius: 0 4px 4px 0; font-size: 0.92rem; }
+blockquote p:last-child { margin-bottom: 0; }
+blockquote ul, blockquote ol { margin-bottom: 8px; }
+blockquote li { margin-bottom: 4px; }
+
+/* Footer */
+.product-footer { margin-top: 64px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 0.8rem; color: var(--text-muted); }
+
+/* Print */
+@media print {
+  body { background: #fff; color: #000; max-width: none; padding: 0; }
+  h2 { border-bottom-color: #ccc; }
+  .product-header { border-bottom-color: #000; }
+  blockquote { background: #f9f9f9; border-left-color: #ccc; }
+}
+
+@media (max-width: 480px) {
+  body { padding: 24px 16px 48px; }
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.2rem; }
+  blockquote { padding: 12px 16px; }
+}
+  </style>
+</head>
+<body>
+
+  <div class="product-header">
+    <div class="brand">Governoble.online</div>
+    <h1>AI Prompts: Interview Coach</h1>
+  </div>
+
+  <p>Prompts to help you prepare for interviews, evaluate candidates, and improve your process.</p>
+
+  <hr>
+
+  <h2>Prompt 1: Generate Custom Interview Questions for a Specific Role</h2>
+
+  <blockquote>
+    <p>I'm interviewing candidates for a [Job Title] at my company. Here's what the role involves:</p>
+    <p>[Paste the job description or summarize the key responsibilities]</p>
+    <p>Generate 12 behavioral interview questions tailored to this specific role. For each question:</p>
+    <ul>
+      <li>State what competency it's testing</li>
+      <li>Give me a "strong answer" example (what a great candidate would say)</li>
+      <li>Give me a "red flag" example (what should concern me)</li>
+    </ul>
+    <p>Focus on questions that reveal how they actually work, not how well they interview.</p>
+  </blockquote>
+
+  <hr>
+
+  <h2>Prompt 2: Build an Interview Plan for Multiple Rounds</h2>
+
+  <blockquote>
+    <p>I'm hiring for a [Job Title] and will have [2/3/4] interview rounds. Here's the role:</p>
+    <p>[Paste job description or summarize]</p>
+    <p>Design an interview plan that covers everything without redundancy:</p>
+    <ul>
+      <li><strong>Round 1:</strong> [Phone screen / Recruiter screen] — what to assess, suggested questions, time allocation</li>
+      <li><strong>Round 2:</strong> [Hiring manager interview] — what to assess, suggested questions, time allocation</li>
+      <li><strong>Round 3:</strong> [Team/panel interview] — what to assess, who should ask what, time allocation</li>
+      <li><strong>[Round 4 if applicable]:</strong> [Skills assessment / Final round]</li>
+    </ul>
+    <p>Make sure each round has a distinct purpose. Tell me who should be in each round and what they should evaluate.</p>
+  </blockquote>
+
+  <hr>
+
+  <h2>Prompt 3: Evaluate a Candidate's Answers</h2>
+
+  <blockquote>
+    <p>I just interviewed a candidate for [Job Title]. Here are the questions I asked and how they responded. Help me evaluate their answers:</p>
+    <p><strong>Question 1:</strong> [Your question]<br><strong>Their answer:</strong> [What they said, as best you remember]</p>
+    <p><strong>Question 2:</strong> [Your question]<br><strong>Their answer:</strong> [What they said]</p>
+    <p>[Continue for all questions]</p>
+    <p>For each answer:</p>
+    <ol>
+      <li>Rate it 1-5 (using the scorecard scale: 1 = doesn't meet, 3 = meets, 5 = exceptional)</li>
+      <li>Explain what was strong about the answer</li>
+      <li>Flag anything concerning</li>
+      <li>Suggest a follow-up question I should have asked</li>
+    </ol>
+    <p>Then give me an overall assessment: should I advance this candidate?</p>
+  </blockquote>
+
+  <hr>
+
+  <h2>Prompt 4: Prepare for Hard Conversations During Interviews</h2>
+
+  <blockquote>
+    <p>I'm about to interview someone for [Job Title] and I need to address some potentially awkward topics:</p>
+    <p>[Describe what you need to discuss — e.g., "The role pays less than their current salary" / "There's a gap in their resume I want to understand" / "They were let go from their last position" / "The role requires relocation and they seem hesitant"]</p>
+    <p>Help me:</p>
+    <ol>
+      <li>Frame the topic professionally without being evasive</li>
+      <li>Give me the exact wording to open the conversation</li>
+      <li>Suggest follow-up questions based on likely responses</li>
+      <li>Tell me what would be a reassuring answer vs. a concerning one</li>
+    </ol>
+  </blockquote>
+
+  <hr>
+
+  <h2>Prompt 5: Debrief and Compare Candidates</h2>
+
+  <blockquote>
+    <p>I've completed interviews for [Job Title]. Help me make a decision. Here's a summary of each candidate:</p>
+    <p><strong>Candidate A: [Name]</strong></p>
+    <ul>
+      <li>Background: [Brief summary]</li>
+      <li>Strengths: [What stood out]</li>
+      <li>Concerns: [What worried you]</li>
+      <li>Compensation ask: [$X]</li>
+      <li>Interviewer recommendations: [Strong yes / Yes / Lean yes / etc.]</li>
+    </ul>
+    <p><strong>Candidate B: [Name]</strong><br>[Same format]</p>
+    <p><strong>Candidate C: [Name]</strong><br>[Same format]</p>
+    <p>The role's top priorities are: [list the 2-3 most important things for success in this role]</p>
+    <p>Help me:</p>
+    <ol>
+      <li>Rank the candidates against those priorities</li>
+      <li>Identify which concerns are dealbreakers vs. manageable</li>
+      <li>Flag anything I might be overlooking</li>
+      <li>Make a recommendation with your reasoning</li>
+    </ol>
+  </blockquote>
+
+  <hr>
+
+  <h2>Prompt 6: Practice Interviewing (Mock Interview)</h2>
+
+  <blockquote>
+    <p>I'm hiring for the first time and want to practice being the interviewer. Pretend you're a candidate for this role:</p>
+    <p>[Paste job description]</p>
+    <p>Play a realistic candidate — not a perfect one. Give me a mix of strong answers, okay answers, and at least one answer that should be a yellow or red flag. Answer in a conversational tone, not bullet points.</p>
+    <p>After I've asked 8-10 questions, break character and give me feedback on:</p>
+    <ul>
+      <li>How well I probed for specifics</li>
+      <li>Whether I missed any red flags</li>
+      <li>Questions I should have asked but didn't</li>
+      <li>How the overall flow felt</li>
+    </ul>
+  </blockquote>
+
+  <hr>
+
+  <h2>Prompt 7: Create a Skills Assessment</h2>
+
+  <blockquote>
+    <p>I need a take-home or on-site skills assessment for a [Job Title] candidate. The role's key skills are:</p>
+    <p>[List 3-5 core skills — e.g., "data analysis in Excel, writing client-facing reports, project prioritization"]</p>
+    <p>Design a practical assessment that:</p>
+    <ul>
+      <li>Takes no more than [30 minutes / 1 hour / 2 hours] to complete</li>
+      <li>Tests real skills they'd use on the job, not trick questions</li>
+      <li>Has a clear scoring rubric so multiple evaluators assess consistently</li>
+      <li>Respects the candidate's time (don't ask for free work that benefits your company)</li>
+    </ul>
+    <p>Include the assessment itself, the instructions you'd send to the candidate, and the evaluation rubric for your team.</p>
+  </blockquote>
+
+  <div class="product-footer">
+    &copy; 2026 Governoble. All rights reserved.
+  </div>
+
+</body>
+</html>

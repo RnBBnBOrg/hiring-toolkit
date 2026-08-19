@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Prompts: Job Description Generator — Hiring Toolkit</title>
+  <style>
+/* Governoble.online — Product Stylesheet */
+:root {
+  --ink: #141821;
+  --ground: #faf9f7;
+  --paper: #fff;
+  --steel: #3d5a80;
+  --coral: #d96b4e;
+  --text: #1d1f24;
+  --text-muted: #5a5d63;
+  --border: #d6d3cc;
+  --code-bg: #f0efeb;
+  --quote-border: #d96b4e;
+  --quote-bg: #fdf6f3;
+  --check-color: #3d5a80;
+  --font-display: Georgia, 'Noto Serif', 'Times New Roman', serif;
+  --font-body: -apple-system, 'Segoe UI', system-ui, Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: 'Cascadia Code', 'SF Mono', SFMono-Regular, Consolas, 'Liberation Mono', monospace;
+  --max-w: 760px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #edece8;
+    --ground: #111520;
+    --paper: #1a1f2e;
+    --steel: #7ba4d4;
+    --coral: #e0845f;
+    --text: #dddbd7;
+    --text-muted: #8a8d94;
+    --border: #2a2f3d;
+    --code-bg: #161b28;
+    --quote-border: #e0845f;
+    --quote-bg: #1e1a17;
+    --check-color: #7ba4d4;
+  }
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: var(--font-body);
+  color: var(--text);
+  background: var(--ground);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 48px 28px 80px;
+}
+
+/* Typography */
+h1 { font-family: var(--font-display); font-size: 1.8rem; font-weight: 400; letter-spacing: -0.02em; margin: 48px 0 16px; line-height: 1.25; }
+h2 { font-family: var(--font-display); font-size: 1.4rem; font-weight: 400; letter-spacing: -0.015em; margin: 40px 0 12px; padding-bottom: 8px; border-bottom: 1px solid var(--border); line-height: 1.3; }
+h3 { font-family: var(--font-display); font-size: 1.15rem; font-weight: 400; margin: 32px 0 8px; line-height: 1.35; }
+h4 { font-size: 0.95rem; font-weight: 700; margin: 24px 0 6px; }
+p { margin: 0 0 16px; font-size: 0.95rem; }
+hr { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
+ul { margin: 0 0 16px; padding-left: 24px; font-size: 0.95rem; }
+ol { margin: 0 0 16px; padding-left: 24px; font-size: 0.95rem; }
+li { margin-bottom: 6px; line-height: 1.6; }
+
+/* Header */
+.product-header { margin-bottom: 48px; padding-bottom: 24px; border-bottom: 2px solid var(--steel); }
+.product-header .brand { font-family: var(--font-display); font-size: 0.8rem; color: var(--text-muted); letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 4px; }
+.product-header h1 { margin: 0; }
+
+/* Blockquotes */
+blockquote { border-left: 3px solid var(--quote-border); background: var(--quote-bg); padding: 16px 20px; margin: 0 0 20px; border-radius: 0 4px 4px 0; font-size: 0.92rem; }
+blockquote p:last-child { margin-bottom: 0; }
+blockquote ul, blockquote ol { margin-bottom: 8px; }
+blockquote li { margin-bottom: 4px; }
+
+/* Footer */
+.product-footer { margin-top: 64px; padding-top: 20px; border-top: 1px solid var(--border); font-size: 0.8rem; color: var(--text-muted); }
+
+/* Print */
+@media print {
+  body { background: #fff; color: #000; max-width: none; padding: 0; }
+  h2 { border-bottom-color: #ccc; }
+  .product-header { border-bottom-color: #000; }
+  blockquote { background: #f9f9f9; border-left-color: #ccc; }
+}
+
+@media (max-width: 480px) {
+  body { padding: 24px 16px 48px; }
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.2rem; }
+  blockquote { padding: 12px 16px; }
+}
+  </style>
+</head>
+<body>
+
+  <div class="product-header">
+    <div class="brand">Governoble.online</div>
+    <h1>AI Prompts: Job Description Generator</h1>
+  </div>
+
+  <p>Paste these prompts into ChatGPT, Claude, or any AI tool. Replace the bracketed text with your details.</p>
+
+  <hr>
+
+  <h2>Prompt 1: Generate a Job Description from Scratch</h2>
+
+  <blockquote>
+    <p>I need to write a job description for a [Job Title] at my company. Here's what I know:</p>
+    <ul>
+      <li><strong>Company:</strong> [Name, what you do, how many employees, industry]</li>
+      <li><strong>Role type:</strong> [Full-time / Part-time / Contract]</li>
+      <li><strong>Location:</strong> [On-site / Remote / Hybrid — city if relevant]</li>
+      <li><strong>Reports to:</strong> [Title]</li>
+      <li><strong>Compensation range:</strong> [$X - $Y]</li>
+      <li><strong>Main responsibilities:</strong> [List 3-5 things this person will do day-to-day]</li>
+      <li><strong>Must-have skills/experience:</strong> [What they absolutely need]</li>
+      <li><strong>Nice-to-have:</strong> [What would be a bonus]</li>
+    </ul>
+    <p>Write a complete job description that sounds professional but approachable — not corporate jargon. Include sections for About Us, The Role, What You'll Do, What We're Looking For, What We Offer, and How to Apply. Keep it under 500 words.</p>
+  </blockquote>
+
+  <hr>
+
+  <h2>Prompt 2: Rewrite a Job Description for a Different Audience</h2>
+
+  <blockquote>
+    <p>Here's a job description I've written: [paste your draft]</p>
+    <p>Rewrite it to appeal to [target audience — e.g., "experienced professionals who are currently employed and passively looking" / "early-career candidates" / "candidates from non-traditional backgrounds"]. Adjust the tone, the language, and which aspects of the role you emphasize. Keep the requirements the same but frame them differently.</p>
+  </blockquote>
+
+  <hr>
+
+  <h2>Prompt 3: Audit a Job Description for Red Flags</h2>
+
+  <blockquote>
+    <p>Review this job description and flag anything that might turn off strong candidates:</p>
+    <p>[Paste your job description]</p>
+    <p>Specifically check for:</p>
+    <ul>
+      <li>Vague responsibilities ("other duties as assigned" overuse)</li>
+      <li>Unrealistic requirements (10 years experience for a mid-level role)</li>
+      <li>Missing compensation information</li>
+      <li>Gendered or exclusionary language</li>
+      <li>Jargon that makes the company sound impersonal</li>
+      <li>Anything that suggests poor work-life balance</li>
+    </ul>
+    <p>For each issue, explain why it's a problem and suggest a specific rewrite.</p>
+  </blockquote>
+
+  <hr>
+
+  <h2>Prompt 4: Create Role Variations from One Base Description</h2>
+
+  <blockquote>
+    <p>Here's a job description for a [Job Title]: [paste description]</p>
+    <p>Now create variations for:</p>
+    <ol>
+      <li><strong>Junior version</strong> — same role but for someone with 0-2 years of experience. Scale down responsibilities, adjust requirements, emphasize learning and mentorship.</li>
+      <li><strong>Senior version</strong> — same role but for someone with 7+ years. Add leadership responsibilities, strategic thinking, and mentoring expectations.</li>
+      <li><strong>Contract version</strong> — same role but as a 3-6 month engagement. Adjust language around employment type, benefits, and scope.</li>
+    </ol>
+    <p>For each, only change what needs to change — keep the company description and core role the same.</p>
+  </blockquote>
+
+  <hr>
+
+  <h2>Prompt 5: Extract a Job Description from a Brain Dump</h2>
+
+  <blockquote>
+    <p>I need to hire someone but I haven't organized my thoughts yet. Here's everything I know about what I need:</p>
+    <p>[Stream-of-consciousness description — e.g., "I need someone who can handle all our customer emails and phone calls, maybe do some social media too, they need to be good with people and not get flustered, ideally they've worked with Zendesk or something similar, it's full-time, probably $45-55K, they'd work with me and the two other people on the team..."]</p>
+    <p>Turn this into a polished, structured job description. Ask me clarifying questions about anything important that I left out before writing the final version.</p>
+  </blockquote>
+
+  <hr>
+
+  <h2>Prompt 6: Write a Job Description for a Role That Doesn't Exist Yet</h2>
+
+  <blockquote>
+    <p>I think I need to hire someone, but I'm not sure what the role should be called or how to scope it. Here's the problem I'm trying to solve:</p>
+    <p>[Describe the pain point — e.g., "I'm spending 20 hours a week on admin tasks that are keeping me from selling. I need someone to take over scheduling, invoicing, vendor communication, and basic bookkeeping. But I also need help with some marketing — posting on social media and updating our website."]</p>
+    <p>Based on this:</p>
+    <ol>
+      <li>What should this role be called? Give me 3 options with trade-offs.</li>
+      <li>Is this one role or two? Be honest about scope creep.</li>
+      <li>What level of experience should I target, and what's a reasonable salary range for [my location / remote]?</li>
+      <li>Write the job description for your recommended option.</li>
+    </ol>
+  </blockquote>
+
+  <hr>
+
+  <h2>Prompt 7: Optimize a Job Description for Job Boards</h2>
+
+  <blockquote>
+    <p>Here's my job description: [paste it]</p>
+    <p>Optimize it for posting on [Indeed / LinkedIn / ZipRecruiter / specific board]. Specifically:</p>
+    <ul>
+      <li>Adjust formatting for how that platform displays listings</li>
+      <li>Front-load the most important information (compensation, location, remote status)</li>
+      <li>Add relevant keywords candidates would search for without keyword-stuffing</li>
+      <li>Suggest what to put in the "summary" or "headline" field if the platform has one</li>
+      <li>Recommend 3-5 tags or categories to select</li>
+    </ul>
+  </blockquote>
+
+  <div class="product-footer">
+    &copy; 2026 Governoble. All rights reserved.
+  </div>
+
+</body>
+</html>
